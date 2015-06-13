@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Instalasi Git di Windows · Living life and Make it Better
+    
+  </title>
+  
+  <meta name="author" content="Endy Muhardin">
+
+  
+  <meta name="description" content="
+  Instalasi Git di Windows
+  07 Jan 2011
+  Setelah kemarin kita bahas migrasi di sisi server, sekarang kita bahas instalasi di client. Kenapa yang...">
+  
+
+
+  
+  <link rel="canonical" href="http://software.endy.muhardin.com/aplikasi/instalasi-git-di-windows">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/styles.css">
+  <link rel="stylesheet" href="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/pygment_trac.css">
+  <link rel="stylesheet" href="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/youtube.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://software.endy.muhardin.com/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="http://software.endy.muhardin.com/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://software.endy.muhardin.com/atom.xml">
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+
+  <body>
+    <div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/1ldYU13brY_.htm" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe><iframe src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/1ldYU13brY__002.htm" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/ga.js" async="" type="text/javascript"></script><script src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/sdk.js" id="facebook-jssdk"></script><script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=269506799827290&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+    <div class="wrapper">
+      <header>
+    <h1><a href="http://software.endy.muhardin.com/">Living life and Make it Better</a></h1>
+    <p>life, learn, contribute</p>
+    <nav><ul>
+      
+
+      
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <li>
+              <a href="http://software.endy.muhardin.com/archives/index.html">Archive</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li>
+              <a href="http://software.endy.muhardin.com/calendar/index.html">Calendar</a>
+            </li>
+          
+        
+      
+        
+          
+            <li>
+              <a href="http://software.endy.muhardin.com/about/index.html">About Me</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    </ul></nav>
+
+    <p>
+        <a href="http://software.endy.muhardin.com/">
+            <img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/a3c8a6a973fc0c0fa3d89cb69c103ad0.jpg">
+        </a>
+    </p>
+
+
+    
+    <div>
+      <h2>Endy Muhardin</h2>
+      <p>
+        Software Developer berdomisili di Jabodetabek, berkutat di lingkungan open source, terutama Java dan Linux.
+      </p>
+    </div>
+    
+
+    
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input name="cmd" value="_s-xclick" type="hidden">
+<input name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+" type="hidden">
+<input src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/btn_donate_SM.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" border="0" type="image">
+</form>
+
+</header>
+
+      
+      <section>
+        <div class="post">
+  <h1 class="post-title">Instalasi Git di Windows</h1>
+  <span class="post-date">07 Jan 2011</span>
+  <p>Setelah kemarin kita bahas <a href="http://endy.artivisi.com/blog/lain/migrasi-subversion-ke-git/">migrasi di sisi server</a>,
+ sekarang kita bahas instalasi di client. Kenapa yang dijelaskan hanya 
+Windows, sedangkan Linux tidak? Well, ini karena di Linux instalasinya 
+begitu mudah sehingga terlalu pendek kalau ingin dijadikan satu posting 
+sendiri. </p>
+
+<p>Gak percaya? Ini caranya install di Ubuntu. Buka command prompt, dan ketik </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">sudo apt-get install git-core git-svn git-gui gitk
+</code></pre></div>
+<p>Sedikit konfigurasi standar. </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">git config --global user.name "Endy Muhardin"
+git config --global user.email "endy.muhardin@geemail.com"
+git config --global color.ui "true"
+</code></pre></div>
+<p>Kemudian, bila kita belum punya public key, silahkan bikin seperti <a href="http://endy.artivisi.com/blog/linux/login-ssh-dengan-private-key/">tutorial di sini</a>. </p>
+
+<p>Dan selesailah sudah. Seperti saya bilang sebelumnya, singkat dan sama sekali gak seru. Gak ada screenshotnya :D</p>
+
+<p>Nah, mari kita bahas instalasi di Windows. </p>
+
+<p>Pada intinya, langkah-langkahnya adalah sebagai berikut : </p>
+
+<ol>
+<li><p>Instalasi Putty : Ini kita perlukan untuk membuat public key. 
+Public key digunakan untuk berinteraksi dengan repository git di server.
+ Apa itu public key dan apa manfaatnya sedikit banyak sudah dibahas <a href="http://endy.artivisi.com/blog/linux/login-ssh-dengan-private-key/">di artikel ini</a>. </p></li>
+<li><p>Instalasi Git : Ini adalah aplikasi Git nya sendiri. Ada dua 
+varian, Cygwin dan MSysGit. Kita akan gunakan yang lebih populer, yaitu 
+MSysGit.</p></li>
+<li><p>Instalasi TortoiseGit : Seperti TortoiseSVN, ini adalah aplikasi 
+GUI yang terintegrasi dengan Windows Explorer, sehingga pengelolaan 
+repository dapat dilakukan di Windows Explorer seperti manipulasi 
+file/folder biasa.</p></li>
+</ol>
+
+<h2 id="instalasi-putty">Instalasi Putty</h2>
+
+<p>Putty bisa diunduh <a href="http://www.chiark.greenend.org.uk/%7Esgtatham/putty/download.html">di sini</a>. Pilih saja versi installer, supaya tidak pusing. </p>
+
+<p>Putty ini akan kita gunakan untuk membuat pasangan public key dan 
+private key. Caranya adalah menggunakan aplikasi PuttyGen. Jalankan 
+PuttyGen, dan klik tombol Generate. 
+<img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/01-ssh-generate-keypair-300x290.png" alt="Generate keypair "></p>
+
+<p>PuttyGen akan membuatkan public key dan private key. Save private 
+keynya. Kita akan membutuhkan ini nanti. Klik tombol Save Private Key, 
+dan simpan di folder mana saja. 
+<img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/02-ssh-save-keypair-300x210.png" alt=" "></p>
+
+<p>Terakhir, copy-paste text public keynya. Ini akan kita perlukan untuk
+ dipasang di server supaya kita bisa mengakses repository di server, 
+misalnya Github atau repository kantor. 
+<img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/03-ssh-export-public-key-300x236.png" alt=" "></p>
+
+<h2 id="instalasi-git">Instalasi Git</h2>
+
+<p>Pertama, <a href="http://code.google.com/p/msysgit/">unduh dulu MSysGit</a>.
+ Di websitenya ada banyak file yang bisa diunduh. Kita perlu yang Git, 
+bukan msysgit. Nama filenya diawali Git, seperti ini: 
+Git-1.7.3.1-preview20101002.exe. Ambil saja versi yang terbaru. </p>
+
+<p>Setelah diunduh, tentu kita jalankan. Berikut screenshot next-next seperti biasa. </p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/01-msysgit-install-welcome-300x230.png" alt=" "></p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/02-msysgit-install-component-300x233.png" alt=" "></p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/03-msysgit-install-path-300x232.png" alt=" "></p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/04-msysgit-install-crlf-300x232.png" alt=" "></p>
+
+<h2 id="instalasi-tortoisegit">Instalasi TortoiseGit</h2>
+
+<p>TortoiseGit bisa <a href="http://code.google.com/p/tortoisegit/">diunduh di sini</a>. 
+Setelah selesai mengunduh, lagi-lagi klik next-next. </p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/01-tortoisegit-install-welcome-300x233.png" alt=" "></p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/02-tortoisegit-install-sshclient-300x231.png" alt=" "></p>
+
+<p>Sampai di sini, instalasi Git sudah selesai. Tapi masih ada langkah 
+tambahan supaya kita bisa melakukan clone dari repository server 
+(misalnya Github). </p>
+
+<h2 id="clone-dari-github">Clone dari Github</h2>
+
+<p>Untuk bisa clone dari github, pertama kali kita harus punya account Github. Silahkan <a href="https://github.com/plans">daftar dulu</a>. </p>
+
+<p>Setelah punya account, login, dan kita akan melihat dashboard. </p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/01-github-dashboard-300x208.png" alt=" "></p>
+
+<p>Klik account setting, dan masuk ke menu SSH Public Keys</p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/02-github-add-pubkey-300x206.png" alt=" "></p>
+
+<p>Pastekan public key yang sudah kita export menggunakan PuttyGen di 
+atas. Setelah diadd, public key kita akan terdaftar. Kita boleh pasang 
+public key banyak-banyak, karena biasanya satu public key mencerminkan 
+satu komputer. Bisa saja kita punya PC dan juga Laptop. 
+<img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/03-github-add-pubkey-completed-300x201.png" alt=" "></p>
+
+<p>Setelah public key didaftarkan, selanjutnya kita lihat repository yang kita punya. 
+<img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/04-github-repositories-300x183.png" alt=" "></p>
+
+<p>Kalau belum punya repository, Anda bisa fork <a href="https://github.com/endymuhardin/belajarGit">repository belajarGit punya saya</a>, sehingga nanti Anda punya repo belajarGit sendiri. </p>
+
+<p>Setiap repository punya URL untuk melakukan clone. Copy paste URL clone repository. 
+<img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/05-github-repo-belajarGit-300x208.png" alt=" "></p>
+
+<p>Untuk melakukan clone, buka Windows Explorer, klik kanan, dan pilih Git Clone. 
+<img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/03-tortoisegit-use-clone-300x208.png" alt=" "></p>
+
+<p>Masukkan URL yang tadi kita copy dari Github, dan load private key yang kita buat dengan PuttyGen. </p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/04-tortoisegit-clone-info-300x200.png" alt=" "></p>
+
+<p>Putty akan melakukan komunikasi dengan Github. Kalau kita belum 
+pernah clone dari Github sebelumnya, Putty akan menanyakan apakah kita 
+ingin menerima koneksi dari Github. Jawab saja Yes. 
+<img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/05-tortoisegit-clone-save-host-key-300x210.png" alt=" "></p>
+
+<p>Setelah kita jawab Yes, TortoiseGit akan mendownload repository dari 
+Github untuk kita pakai di local, yang lebih dikenal dengan istilah 
+clone. Ini ditunjukkan dengan progress bar kura-kura salto. Jumlah 
+kura-kura yang salto tergantung dari ukuran repository kita. Semakin 
+besar repositorynya, semakin banyak kura-kura yang salto. Bersabarlah, 
+dan tunggu sampai semua kura-kura selesai melakukan aksinya. </p>
+
+<p><img src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/06-tortoisegit-clone-complete-300x211.png" alt=" "></p>
+
+<p>Sekarang repository sudah ada di local, dan siap digunakan. Bagaimana
+ cara menggunakannya, stay tuned. Akan dibahas di posting berikutnya. </p>
+
+</div>
+<hr>
+
+<div class="related">
+  <h4>Related Posts</h4>
+  <ul class="related-posts">
+    
+      <li>
+        <h5>
+          <a href="http://software.endy.muhardin.com/linux/mencari-bottleneck-sistem">
+            Mencari Bottleneck Sistem · 24 Feb 2015
+          </a>
+        </h5>
+      </li>
+    
+      <li>
+        <h5>
+          <a href="http://software.endy.muhardin.com/java/apache-maven">
+            Apache Maven · 24 Feb 2015
+          </a>
+        </h5>
+      </li>
+    
+      <li>
+        <h5>
+          <a href="http://software.endy.muhardin.com/aplikasi/membuat-blog-gratis-di-openshift">
+            Membuat Blog Gratis di Openshift · 13 Feb 2015
+          </a>
+        </h5>
+      </li>
+    
+  </ul>
+</div>
+<hr>
+
+<div fb-iframe-plugin-query="action=like&amp;app_id=269506799827290&amp;container_width=600&amp;href=http%3A%2F%2Fsoftware.endy.muhardin.com%2Faplikasi%2Finstalasi-git-di-windows&amp;layout=standard&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true" fb-xfbml-state="rendered" class="fb-like fb_iframe_widget" data-href="http://software.endy.muhardin.com/aplikasi/instalasi-git-di-windows" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"><span style="vertical-align: bottom; width: 450px; height: 20px;"><iframe class="" src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/like.htm" style="border: medium none; visibility: visible; width: 450px; height: 20px;" title="fb:like Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f2d098cb20015b8" width="1000px" frameborder="0" height="1000px"></iframe></span></div>
+
+<div fb-xfbml-state="rendered" class="fb-comments fb_iframe_widget" data-href="http://software.endy.muhardin.com/aplikasi/instalasi-git-di-windows/" data-colorscheme="light"><span style="height: 344px; width: 550px;"><iframe src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/comments.htm" class="fb_ltr" title="Facebook Social Plugin" style="border: medium none; overflow: hidden; height: 344px; width: 550px;" scrolling="no" name="f39a957ff794432" id="f20b93f457f8b1a"></iframe></span></div>
+
+
+      </section>
+    
+      <footer>
+    <p>© 2015. All rights reserved.</p>
+    <p><small>Powered by <a href="http://jekyllrb.com/">Jekyll</a> | Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> 
+</footer>
+
+<script src="Instalasi%20Git%20di%20Windows%20%C2%B7%20Living%20life%20and%20Make%20it%20Better_files/scale.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36102948-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+
+    </div>
+  
+
+</body></html>
