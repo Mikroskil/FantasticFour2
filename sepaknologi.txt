@@ -1,0 +1,56 @@
+Microchip ball
+
+Microchip berukuran hanya sebesar kurang dari setengah inch (15 milimeter) akan ditanam di dalam bola 
+yang kemudian akan memancarkan sinyal radio saat bola melampaui garis gawang. 
+Sinyal tersebut akan ditangkap 12 antena yang ditempatkan di pojok-pojok lapangan yang kemudian dikirimkan
+ kembali ke penangkap sinyal yang ada di tangan wasit dalam waktu kurang dari satu detik. 
+Wasit hanya menggunakan teknologi ini bila ia merasa ragu untuk mengambil sebuah keputusan bila ada kontroversi 
+tentang terjadi tidaknya sebuah gol. Bila bola melewati garis gawang, petunjuk di tangan wasit 
+akan menunjukkan kata “Gol!” yang kemudian terekam oleh teknologi ini.
+
+Anti Diving
+
+Alat kecil ini diletakkan diantara tumit dan mata kaki yang tidak mengganggu pemain. 
+Hebatnya, sensor didalamnya mampu mendeteksi bentrokan kaki antara pemain. 
+"Ada dua sensor yang mampu mendeteksi kecurangan pemain," kata Andy Shaw pembuat alat anti diving ini dalam Daily Mail, 8 April
+Jeff Winter, mantan wasit Liga Premier mengatakan diving kini sudah menjadi bagian sepak bola. 
+Tapi cara ini tidak adil dan tidak bermartabat. "Jika digunakan mampu meminimalisir kontroversi,"kata Jeff. 
+Namun FIFA belum merespon penggunaan alat antidiving ini.
+
+Sepatu Detektor
+
+Manfaat dari teknologi ini adalah di harapkan mampu mengurangi cedera yang sering menimpa para pemain. Otot yang tidak beres biasanya terjadi setelah sang pemain terkena sliding, terjatuh dan menendang dengan posisi dan langkah yang salah.
+Dalam pertandingan, pemain yang terkena kondisi di atas biasanya tidak sadar dengan keadaan kakinya dalam waktu singkat. Bila mengalami benturan ringan, biasanya pemain bersikap acuh dan kembali bermain tanpa sadar kemungkinan efek yang ditimbulkan. 
+Tapi sepatu ini bisa mendeteksi seberapa jauh efek yang ditimbulkan akibat benturan-benturan yang terjadi pada kaki tersebut sehingga bisa mencegah cedera yang cukup serius. 
+Sehingga, teknologi ini bisa membantu pemain bila ada gejala-gejala akan cedera.
+ 
+Techno Wear
+
+Teknologi Techno wear sebenarnya awal penciptannya hanya untuk olahraga renang yang di pasang pada kostum renang 
+namun akhirnya oleh mahasiswa bernama David Evans dari jurusan Desain Industri Universitas Northumbria yang dibantu 
+pakar ilmu olahraga Liverpool John Moores University dibuat rancangan kostum sepak bola yang dapat 
+memonitor tingkat hidrasi dan detak jantung pemain. Kostum “hi-tech” ciptaannya memakai bahan electro-textile sedangkan
+ perangkat yang digunakan yaitu semacam sensor ECG yangg dapat merekam detak jantung berupa sinyal elektronik yang 
+dipancarkan dengan gelombang radio/wireless ke perangakat komputer di tepi lapangan. Selain itu sensor juga dapat 
+memonitor tingkat dehidrasi dan keletihan pemain dengan cara mengoleskan jelly silikon pada punggung pemain yang saat bereaksi dengan 
+keringat memperlihatkan kondisi kelelahan dan tingkat dehidrasi.
+
+ 
+Hawk eye
+
+Hampir sama dengan bola ber-microchip, hawk eye juga berfungsi untuk memastikan apakah bola sudah melewati garis gawang atau tidak. Teknologi hawk-eye bukan barang baru dalam dunia olahraga. Teknologi ini sudah diterapkan dalam olahraga tenis dan kriket.
+Pada September lalu, pengembang teknologi telah melakukan sebuah pengujian. Hasilnya, teknologi ini mampu diaplikasikan secara akurat di sepak bola. Pengaplikasiannya sendiri menggunakan dua asisten wasit tambahan yang berposisi di belakang gawang untuk melihat keabsahan sebuah gol.
+Dengan adanya teknologi-teknologi ini, diharapkan tidak ada lagi kecurangan ataupun cedera yang menimpa pemain akibat faktor X.
+Oleh karena itulah, menurut penulis, teknologi harus bisa diterapkan dalam sebuah pertandingan sepak bola dimana pun. 
+Supaya keadilan dalam pertandingan sepak bola bisa ditegakkan dengan setegak-tegaknya keadilan sebagaimana mestinya. 
+Serta menghindari FIFA dan IFAB dari segala kritikan keras pecinta sepak bola dunia.
+
+ 
+Spidercam
+
+Spidercam adalah sistem yang memungkinkan film dan televisi kamera untuk bergerak baik secara vertikal dan horizontal 
+di daerah yang telah ditentukan, biasanya lapangan bermain dari acara olahraga seperti lapangan sepak bola atau lapangan tenis. 
+Nama Spidercam merupakan merek dagang. Perangkat spidercam, digunakan untuk menghasilkan view tiga 
+atau 3D dalam pertandingan. Spidercam merupakan perangkat kamera yang mampu bergerak tanpa dibatasi oleh kendala 
+di atas tanah. Kamera ini dengan mudah dan dengan tenang mengikuti perintah pilot atau operator. 
+Teknologi inilah yang membuat penonton menjadi lebih dekat dengan lapangan, sehingga bisa melihat pergerakan pemain.
